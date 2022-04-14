@@ -16,6 +16,7 @@ body{
 .mainGame{
     position: relative;
     overflow: hidden;
+    overflow-x: hidden;
     background-image: url(castle.jpg);
     background-repeat: repeat-x;
     width: 100%;
@@ -23,6 +24,14 @@ body{
     background-size: 100vw 100vh;
     animation: slide 5s linear infinite;
 }
+
+/* @keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(100%); /* The image width */ */
+
 
 .scroll-container{
    background-attachment: scroll;
@@ -37,9 +46,23 @@ body{
     bottom: 0;
     left: 30px;
     align-self: flex-end;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation: angel 0.2s linear infinite;
+    animation-duration: 0.2s;
+    animation-iteration-count: linear infinite;
     animation-timing-function: ease;
+}
+
+.angel.jump{
+	animation: angel 2s linear infinite, jump 1s linear infinite;
+}
+
+@keyframes jump{
+	0%, 100%{
+		bottom: 0px;
+	}
+	35%, 65%{
+		bottom: 250px;
+	}
 }
 
 .gameover{
@@ -77,11 +100,6 @@ body{
     right: 200px;
 }
 
-@keyframes slide {
-    0% {
-      transform: translate(0);
-    }
-    100% {
-      transform: translate(100%); /* The image width */
-    }
-  }
+
+
+
