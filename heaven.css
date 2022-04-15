@@ -7,34 +7,34 @@ body{
     background-color: aquamarine;
 }
 
-.game{
-    color: greenyellow;
-    text-align: center;
-    font-size: large;
-}
-
 .mainGame{
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
-    overflow-x: hidden;
+    /* overflow-x: hidden;
     background-image: url(castle.jpg);
     background-repeat: repeat-x;
     width: 100%;
     height: 100vh;
     background-size: 100vw 100vh;
-    animation: slide 5s linear infinite;
+    animation: slide 10s linear infinite;
+    animation-fill-mode: both; */
 }
-
-/* @keyframes slide {
+ 
+@keyframes slide {
     0% {
-      transform: translate(0);
+      transform: translate3d(0, 0, 0);
     }
     100% {
-      transform: translate(100%); /* The image width */ */
-
+      transform: translate3d(-3000px, 0, 0); /* The image width */
+    }
+}
 
 .scroll-container{
-   background-attachment: scroll;
+    background-image: url(cast.png);
+    height: 790px;
+    width: 5000px;
+    animation: slide 20s linear infinite;
+   /* background-attachment: scroll; */
 }
 
 .angel{
@@ -50,6 +50,12 @@ body{
     animation-duration: 0.2s;
     animation-iteration-count: linear infinite;
     animation-timing-function: ease;
+}
+
+.game{
+    color: greenyellow;
+    text-align: center;
+    font-size: large;
 }
 
 .angel.jump{
