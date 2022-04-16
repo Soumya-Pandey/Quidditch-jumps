@@ -70,8 +70,8 @@ body{
     position: absolute;
     top: 0%;
     left: 50%;
-    color: yellow;
-    transform: translate(-50%, 0);
+    color: #F7FA3D;
+    transform: translate(-50%, 10%);
     font-size: large;
 }
 
@@ -80,8 +80,16 @@ body{
     top: 3%;
     left: 50%;
     transform: translate(-50%, 0);
-    color: yellow;
+    color: #F7FA3D;
     font-size: large;
+}
+
+.info{
+    color:rgb(238, 15, 238);
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .voldemort{
