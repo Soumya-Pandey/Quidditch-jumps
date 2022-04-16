@@ -19,7 +19,7 @@ body{
     animation: slide 10s linear infinite;
     animation-fill-mode: both; */
 }
- 
+
 @keyframes slide {
     0% {
       transform: translate3d(0, 0, 0);
@@ -50,35 +50,37 @@ body{
     animation-duration: 0.2s;
     animation-iteration-count: linear infinite;
     animation-timing-function: ease;
+    transform-origin: 0 0;
+    animation: jump .7s linear alternate infinite;
+}
+
+@keyframes jump {
+    0%   {transform: translate3d(0, 0, 0);}
+    100% {transform: translate3d(0, -100%, 0);}
+  }
+
+.gameover{
+    position: absolute;
+    color: black;
+    font-size: 0;
+    top: 0;
 }
 
 .game{
-    color: greenyellow;
-    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: yellow;
+    transform: translate(-50%, 0);
     font-size: large;
 }
 
-.angel.jump{
-	animation: angel 2s linear infinite, jump 1s linear infinite;
-}
-
-@keyframes jump{
-	0%, 100%{
-		bottom: 0px;
-	}
-	35%, 65%{
-		bottom: 250px;
-	}
-}
-
-.gameover{
-    color: aqua;
-    font-size: 0;
-}
-
 .score{
-    text-align: center;
-    color: aqua;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: yellow;
     font-size: large;
 }
 
