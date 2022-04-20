@@ -101,6 +101,7 @@ setInterval(() => {
         gameover.style.visibility = 'visible'
         alert('Game Over. Your Score is ' + scoreboard)
         scoreboard = 0;
+        
         voldemort.classList.remove('.voldemort')
     }
 
