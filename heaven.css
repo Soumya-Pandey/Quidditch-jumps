@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: rgb(106, 8, 159);
+    overflow: hidden;
 }
 
 .mainGame{
@@ -40,8 +41,8 @@ body{
 #angel{
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150px;
-    height: 130px;
+    width: 130px;
+    height: 120px;
     position: absolute;
     bottom: 0;
     left: 500px;
@@ -60,6 +61,7 @@ body{
   } */
 
 .gameover{
+    visibility: hidden;
     position: absolute;
     color: black;
     font-size: 0;
@@ -93,24 +95,49 @@ body{
 }
 
 .voldemort{
-    width: 120px;
+    width: 120px;    
     height: 100px;
     position: absolute;
     bottom: 0;
     right: 30px;
-    animation: block 3s infinite linear;
+    animation: voldemortis 2.5s infinite linear;
 }
 
-@keyframes block{
-    0%{left: 100%} 
-    100%{left: -20px}
+/* if width = 120px  */
+
+@keyframes voldemortis{
+    0%{
+        left: 100%
+    }
+    100%{
+        left: -50px
+    }
 }
+
+/* .dementor{
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    animation: dementors 4s infinite linear;
+}
+
+@keyframes dementors{
+    0%{
+        left: 100%
+    } 
+    100%{
+        left: -50px
+    }
+} */
+
 
 .snitch{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    bottom: 300px;
+    bottom: 250px;
     left: 500px;
     animation: snitches 5s infinite linear;
 }
@@ -119,20 +146,6 @@ body{
     0%{left: 100%} 
     100%{left: -20px}
 }
-
-/* .dementor{
-    width: 200px;
-    height: 120px;
-    position: absolute;
-    bottom: 0;
-    right: 200px;
-    animation: dementors 4s infinite linear;
-}
-
-@keyframes dementors{
-    0%{left: 100%} 
-    100%{left: 50px}
-} */
 
 
 

@@ -9,16 +9,39 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- <iframe src="HarryPotter.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <!-- <audio id="audio" loop> <source src="HarryPotter.mp3"  type="audio/mp3"></audio> -->
+    <!-- <embed src="HarryPotter.mp3" loop="true" autostart="true" width="2"
+         height="0"> -->
+
+            <audio id="player" loop hidden="true" controls><source src="HarryPotter.mp3" autoplay type="audio/mp3"></audio>
+            <!-- <script type="text/javascript">
+                window.onload=function(){
+                  document.getElementById("my_audio").play();
+                }
+              </script> -->
+
     <div class="mainGame">
         <div class="scroll-container"></div>
+        <audio id="song" src="HarryPotter.mp3" controls type="audio/mp3">
+            Your browser does not support the audio element.
+            </audio>
         </div>
         <div class="game">QUIDDITCH</div>
-        <div class="score">Your Score: 0</div>
+        <div class="score"></div>
         <div class="info">Jump over Voldemort and Dementor to get a +1. Catch the Snitch and get a +2. Yayy</div>
         <img id="angel" src="harry.png">
         <div class="gameover">Game Over</div>
         <img class="voldemort" src="voldemort.png">
         <img class="snitch" src="snitch.png"></div>
         <!-- <img class="dementor" src="dementor.png"></div> -->
+
+        <!-- <embed name="GoodEnough" src="themesong.mp3" loop="false" hidden="true" autostart="true"> -->
 </body>
+
+<!-- <audio id="song" src="HarryPotter.mp3" controls type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio> -->
 </html>
+
