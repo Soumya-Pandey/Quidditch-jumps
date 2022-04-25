@@ -114,6 +114,24 @@ body{
     }
 }
 
+.nagini{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    animation: nagin 3.5s infinite linear;
+}
+
+@keyframes nagin{
+    0%{
+        left: 100%
+    }
+    100%{
+        left: -60px
+    }
+}
+
 /* .dementor{
     width: 120px;
     height: 100px;
@@ -145,6 +163,20 @@ body{
 @keyframes snitches{
     0%{left: 100%} 
     100%{left: -20px}
+}
+
+.owl{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    bottom: 250px;
+    left: 550px;
+    animation: owls 6s infinite linear;
+}
+
+@keyframes owls{
+    0%{left: 100%} 
+    100%{left: -30px}
 }
 
 
