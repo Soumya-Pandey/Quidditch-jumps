@@ -132,7 +132,7 @@ body{
     }
 }
 
-/* .dementor{
+.dementor{
     width: 120px;
     height: 100px;
     position: absolute;
@@ -148,7 +148,7 @@ body{
     100%{
         left: -50px
     }
-} */
+}
 
 
 .snitch{
@@ -170,8 +170,8 @@ body{
     height: 60px;
     position: absolute;
     bottom: 250px;
-    left: 550px;
-    animation: owls 6s infinite linear;
+    left: 600px;
+    animation: owls 5s infinite linear;
 }
 
 @keyframes owls{
